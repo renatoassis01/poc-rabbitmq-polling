@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  rabbitmq:
+    image: docker.io/bitnami/rabbitmq:3.8
+    mem_limit: 512m
+    mem_reservation: 256M
+    ports:
+      - "4369:4369"
+      - "5672:5672"
+      - "25672:25672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_SECURE_PASSWORD=no
+      - RABBITMQ_USERNAME=${RABBITMQ_USERNAME}
+      - RABBITMQ_PASSWORD=${RABBITMQ_PASSWORD}
+    volumes:
+      - "rabbitmq_data:/bitnami"
+volumes:
+  rabbitmq_data:
+    driver: local
