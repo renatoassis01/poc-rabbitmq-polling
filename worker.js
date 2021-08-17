@@ -50,9 +50,10 @@ const getMessage = async (queueName, size) => {
   console.log(items);
   process.once("SIGINT", () => connection.close());
 };
-//getMessage("NSFE", 10);
 
-(async () => {
-  const count = await countQueue("CTE-35");
-  console.log("count: %d", count);
-})();
+getMessage("NSFE", 10);
+
+// (async () => {
+//   const count = await countQueue("CTE-35");
+//   console.log("count: %d", count);
+// })();

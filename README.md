@@ -50,16 +50,21 @@ RABBITMQ_HOST=localhost
 ```sh
 make
 make producer
-make worker
 ```
 
-4. Acesse o RabbitMQ Management
+5. Acesse o RabbitMQ Management
 
    http://localhost:15672/
 
 > user: user definido no .env
 
 > password: password definido no .env
+
+6. Rode o worker para consumir os dados da fila
+
+```sh
+make worker
+```
 
 ## Referências
 
