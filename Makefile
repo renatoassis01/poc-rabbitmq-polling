@@ -8,4 +8,10 @@ down:
 	docker-compose -f docker-compose.rmq.yaml down
 
 logs:
-	docker-compose -f docker-compose.rmq.yaml logs 
+	docker-compose -f docker-compose.rmq.yaml logs
+
+producer:
+	node producer.js 
+
+worker:
+	node worker.js

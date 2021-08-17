@@ -49,8 +49,8 @@ RABBITMQ_HOST=localhost
 
 ```sh
 make
-node producer.js
-node worker.js
+make producer
+make worker
 ```
 
 4. Acesse o RabbitMQ Management
