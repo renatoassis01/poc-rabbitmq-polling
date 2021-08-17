@@ -37,8 +37,8 @@ npm install
 3. Crie um arquivo _.env_ na raiz
 
 ```
-RABBITMQ_USERNAME=seidor
-RABBITMQ_PASSWORD=seidor
+RABBITMQ_USERNAME=user
+RABBITMQ_PASSWORD=password
 RABBITMQ_PORT=5672
 RABBITMQ_HOST=localhost
 ```
