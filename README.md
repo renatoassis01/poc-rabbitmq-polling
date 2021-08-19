@@ -68,6 +68,8 @@ make worker
 
 ## Referências
 
+https://www.cloudamqp.com/blog/rabbitmq-basic-consume-vs-rabbitmq-basic-get.html
+
 https://livebook.manning.com/book/rabbitmq-in-depth/chapter-5/12
 
 http://nelsonsar.github.io/2013/11/07/RabbitMQ-exchange-types.html
