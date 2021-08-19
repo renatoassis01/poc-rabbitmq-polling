@@ -2,7 +2,9 @@
 
 ### Importante
 
-O RabbitMQ oferece duas maneiras de receber mensagens que são o  `basic.get` e o `basic.consume`(**push-based**). Como decidir entre usar um consumidor e consumir as mensagens manualmente usando o `basic.get`?. Isto depende da carga de trabalho que cada um cria. O comando `basic.get` é relativamente caro quando se trata de recursos, tornando-se uma opção ruim para construir um aplicativo no RabbitMQ que se concentre na velocidade. Nesta POC (Proof of Concept) optou-se por basear no conceito de *polling* usando o comando `basic.get` devido a necessidade de consumir as mensagens manualmente. A velocidade neste caso não era um requisito obrigatório. 
+O RabbitMQ oferece duas maneiras de receber mensagens que são o  `basic.get` e o `basic.consume`(**push-based**). Como decidir entre usar um consumidor e consumir as mensagens manualmente usando o `basic.get`?. Isto depende da carga de trabalho que cada um cria. O comando `basic.get` é relativamente caro quando se trata de recursos, tornando-se uma opção ruim para construir um aplicativo no RabbitMQ que se concentre na velocidade. Nesta POC (Proof of Concept) optou-se por basear no conceito de *polling* usando o comando `basic.get` devido a necessidade de consumir as mensagens manualmente e sincronizada pelo fato de se rodar em uma lambda com o tempo de execução limitada. A velocidade neste caso não era um requisito obrigatório. 
+
+
 
 Depedências:
 
